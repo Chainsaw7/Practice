@@ -1,1 +1,2 @@
 This is a file that resides in MyBranch
+Edit branch
