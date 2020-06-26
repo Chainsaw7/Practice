@@ -17,8 +17,8 @@ jobs:
     - name: Get the version
       id: vars
       run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag erether/docker101tutorial:Try
-    - name: Push the tagged Docker image
-      run: docker push erether/docker101tutorial:Try
+    - name: Build the latestcDocker image
+      run: docker build . --file Dockerfile --tag erether/docker101tutorial:latest
+    - name: Push the latest Docker image
+      run: docker push erether/docker101tutorial:latest
      
