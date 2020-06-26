@@ -18,7 +18,7 @@ jobs:
       id: vars
       run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag erether/docker101tutorial:$(100)
+      run: docker build . --file Dockerfile --tag erether/docker101tutorial:Try
     - name: Push the tagged Docker image
-      run: docker push erether/docker101tutorial:$(100)
+      run: docker push erether/docker101tutorial:Try
      
